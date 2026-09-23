@@ -16,23 +16,33 @@ The gexbot product is a trading bot that uses the gamma exposure of options to v
 
 There is no official logo for _Not Financial Advice, LLC_. The logo for the _gexbot_ product is the only official logo.
 
-Logo files are available in the `img/Logos` directory of this repository. The logos are available in the following
-formats: SVG, PNG, and WebP.
+Logo files are available in the `img/logo/gexbot` directory of this repository, split into one subfolder per format:
+`svg` (source of truth), `png`, `webp`, and `jpg`.
 
-There is a dark and light version of the logo. The dark version is intended for use on light backgrounds, and the light version is intended for use on dark backgrounds.
+There are three layout variants, each with a dark and light theme. The dark version is intended for use on light
+backgrounds, and the light version is intended for use on dark backgrounds.
+
+- **icon** - the graphic mark alone, no wordmark (square)
+- **inline** - mark and "gexbot" wordmark side by side (wide)
+- **stacked** - mark and "gexbot" wordmark stacked
+
+Filenames follow the pattern `gexbot_logo_<variant>_<theme>[_<width>x<height>].<ext>`. SVGs are unsized (vector);
+raster exports (`png`/`webp`/`jpg`) bake the exact pixel dimensions into the filename, e.g.
+`gexbot_logo_inline_dark_540x180.png` is 540×180px. No guessing which "180" a size suffix refers to - the full
+`WIDTHxHEIGHT` is always spelled out.
 
 <div style="display: flex; justify-content: space-around; flex-direction: column; align-items: center;">
 <div style="margin: 1em;">
-<img src="img/logo/gexbot/svg/GexBot_Final-only%20graphic_White.svg" width="200" alt="gexbot logo">
-<img src="img/logo/gexbot/svg/GexBot_Finalsvg-only%20graphic_Black.svg" width="200" alt="gexbot logo">
+<img src="img/logo/gexbot/svg/gexbot_logo_icon_light.svg" width="200" alt="gexbot icon, light theme">
+<img src="img/logo/gexbot/svg/gexbot_logo_icon_dark.svg" width="200" alt="gexbot icon, dark theme">
 </div>
 <div style="margin: 1em;">
-<img src="img/logo/gexbot/svg/GexBot_Finalsvg_White.svg" width="200" alt="gexbot logo">
-<img src="img/logo/gexbot/svg/GexBot_Finalsvg_Black.svg" width="200" alt="gexbot logo">
+<img src="img/logo/gexbot/svg/gexbot_logo_stacked_light.svg" width="200" alt="gexbot stacked logo, light theme">
+<img src="img/logo/gexbot/svg/gexbot_logo_stacked_dark.svg" width="200" alt="gexbot stacked logo, dark theme">
 </div>
 <div style="margin: 1em;">
-<img src="img/logo/gexbot/svg/GexBot_Final_Inline_white.svg" width="200" alt="gexbot logo">
-<img src="img/logo/gexbot/svg/GexBot_Finalsvg_Inline_black.svg" width="200" alt="gexbot logo">
+<img src="img/logo/gexbot/svg/gexbot_logo_inline_light.svg" width="200" alt="gexbot inline logo, light theme">
+<img src="img/logo/gexbot/svg/gexbot_logo_inline_dark.svg" width="200" alt="gexbot inline logo, dark theme">
 </div>
 </div>
 
@@ -55,3 +65,22 @@ See [color.md](color.md) for additional colors.
 
 ## Typography
 The primary font for the _gexbot_ product is _Agrandir_. The font weight used are _Regular_. The font is available for download in the `font` directory of this repository.
+
+## Folder Structure
+Everything under `img/` is organized by **asset type**, not by brand (there is currently only one brand, gexbot; the
+other NFA product has its own `skewbot-brand-resources` repo).
+
+```
+img/
+├── logo/gexbot/   Official logo, split into svg (source of truth) / png / webp / jpg
+├── color/         Swatch reference image for color.md
+├── font/          Agrandir-Regular.otf
+├── hero/          Marketing/hero images
+├── icons/         Misc docs iconography
+└── social/        Third-party logos (Discord, X) for attribution use
+```
+
+Within `img/logo/gexbot/`, each format folder holds the same three layout variants (`icon`/`inline`/`stacked`) in both
+themes (`dark`/`light`), with raster sizes spelled out as `WIDTHxHEIGHT` in the filename - see [Logos](#logos) above
+for naming details. There is no legacy or draft artwork kept in this repo; only the current, in-use logo set is
+checked in.
