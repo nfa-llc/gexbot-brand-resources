@@ -1,4 +1,17 @@
 # Color
+
+## Brand Color
+The official _gexbot_ brand accent color is **brand blue**, sourced from the canonical `BRAND_BLUE` constant in
+`react-frontend/src/styles/themes.ts` and the `--color-fd-primary` token in `gexbot-docs`. It is used for active/
+highlighted UI elements (e.g. the top nav bar) across both the app's light and dark themes.
+
+<span style="display: block; color: #0b5bbc;">▉ BRAND BLUE = "#0b5bbc"</span>
+<span style="display: block; color: #64b5f6;">▉ BRAND BLUE (LIGHT TINT, for dark surfaces) = "#64b5f6"</span>
+
+The primary logo colors remain black and white (see [README.md](README.md#logos)) - brand blue is an accent only,
+for UI and the `blue` logo variant, not a replacement for the black/white lockups.
+
+## Chart / Gamma Exposure Colors
 Additional colors for the _gexbot_ product are available for use in marketing materials. These colors are intended to be used as accents and should not be the primary color in any design.
 
 <span style="display: block; color: #4b913b;">▉ POSITIVE GEX OI COLOR = "#4b913b"</span>
@@ -22,4 +35,4 @@ Additional colors for the _gexbot_ product are available for use in marketing ma
 <span style="display: block; color: #d98cc2;">▉ PRIOR 5 COLOR = "#d98cc2"</span>
 <span style="display: block; color: #e6b2d7;">▉ PRIOR 1 COLOR = "#e6b2d7"</span>
 
-![color.jpeg](img/color/color.jpeg)
+![color.jpeg](color/color.jpeg)
