@@ -7,7 +7,7 @@ flagship product of Not Financial Advice, LLC (NFA).
 
 ## 1. Official Names & Identity
 
-- **Product Name**: `gexbot` (written in all lowercase letters within branding lockups).
+- **Product Name**: `gexbot` (always written in lowercase letters, in lockups and in prose).
 - **Company**: Not Financial Advice, LLC (NFA). There is no official logo for NFA itself - the gexbot logo is
   the only official logo.
 - **Domain**: [gexbot.com](https://gexbot.com)
@@ -101,7 +101,8 @@ those are for data visualization only and are not brand/logo colors.
 See [`typography.md`](typography.md) for complete typography guidance.
 
 - The `gexbot` wordmark uses **Agrandir** (Regular).
-- Always write `gexbot` in lowercase within branding lockups. Never capitalize as `Gexbot` or `GEXBOT`.
+- Always write `gexbot` in lowercase, also at the start of a sentence. Never capitalize as `Gexbot` or `GEXBOT`
+  (the legal trademark notice is the exception; see [`typography.md`](typography.md)).
 
 ---
 
